@@ -1,6 +1,17 @@
+import time
+from datetime import date
 from QuickyScript import parser
 
 PROLOGUE = """<?php
+/**
+ * Compiled by QuickyScript Transcompiler
+ * 
+ * Started at """ + str(date.today()) + ", " + time.strftime("%H:%M:%S", time.localtime())  + """
+ *
+ * @author      David Dewes <hello@david-dewes.de>
+ * @version     1.0
+ * @license     MIT
+ */
 
 use Quicky\\Http\\Request;
 use Quicky\\Http\\Response;
