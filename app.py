@@ -8,6 +8,7 @@ from QuickyScript import compiler
 Next:
 - Allow numbers for config name
 - Allow numbers for callback
+- Allow multiple callbacks
 
 Future:
 - Allow more all relevant symbols for routes (@, *, {, })
@@ -20,7 +21,9 @@ if (len(sys.argv) <= 1):
 st = time.time()
 
 for config in sys.argv[1:]:
-    if config.split(".")[1] != "qcnf":
+    explode = config.split(".")
+    if len(explode) <= 1: exit("ERROR: Provided file has no file extension")
+    if explode[1] != "qcnf":
         exit("ERROR: Provided file is not a Quicky-Config")
     with open(config) as f: s = f.read()
 
