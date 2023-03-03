@@ -23,6 +23,15 @@ Config:
   
   ```php
 <?php
+/**
+ * Compiled by QuickyScript Transcompiler
+ * 
+ * Started at 2023-03-03, 14:09:06
+ *
+ * @author      David Dewes <hello@david-dewes.de>
+ * @version     1.0
+ * @license     MIT
+ */
 
 use Quicky\Http\Request;
 use Quicky\Http\Response;
