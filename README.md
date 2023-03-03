@@ -1,7 +1,11 @@
 # quicky-script
-Conceptional Idea - A QuickyPHP Routing-Configuration Scriptlang
+Conceptional Idea - A QuickyPHP Bootstrap Configuration Scriptlang  
 
-Example Config:
+This application will transcompile the QuickyScript code to a QuickyPHP-Code bootstrap, from which you can boot a QuickyPHP app using the configured router behaviour.
+
+## Example
+
+Config:
 ```
 [CNF_NAME]
 
@@ -10,7 +14,7 @@ Example Config:
 /path/to/route/C/ (PUT) <\QUALIFIED\CLASSNAME.CALLBACK>
 ```
 <details>
-  <summary>Above config trans-compiled</summary>
+  <summary>Compiler Result</summary>
   
   ```php
 <?php
