@@ -2,12 +2,12 @@ import sys
 import time
 from QuickyScript import lexer
 from QuickyScript import parser
+from QuickyScript import compiler
 
 """
 Next:
 - Allow numbers for config name
 - Allow numbers for callback
-- Automatic Code Generation
 
 Future:
 - Allow more all relevant symbols for routes (@, *, {, })
@@ -22,11 +22,16 @@ st = time.time()
 for config in sys.argv[1:]:
     if config.split(".")[1] != "qcnf":
         exit("ERROR: Provided file is not a Quicky-Config")
-
     with open(config) as f: s = f.read()
+
+    # parse AST
     cnf = parser.parse(lexer.tokenize(s))
-    
     print(cnf.dump())
+
+    # trans-compile to PHP
+    out = config + ".php"
+    compiler.compile(cnf, out)
+    print(f"Compiled to {out}")
 
 fin = time.time()
 
