@@ -66,7 +66,7 @@ return $app;
 ```
 </details>
 
-Usage:
+Usage in QuickyPHP:
 ```php
 require __DIR__ . "/../vendor/autoload.php";
 
