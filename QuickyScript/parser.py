@@ -83,7 +83,7 @@ def parseName(lst: list[lexer.Token]) -> (str, list[lexer.Token]):
         name += currentToken.type
         currentToken = tokenStack.pop(0)
     
-    if len(tokenStack) == 0: exit("ERROR: Syntax error in config name declaration")
+    if len(tokenStack) == 0: exit("ERROR: Syntax error in config declaration")
     if type(currentToken) != lexer.RSquareToken: exit("ERROR: Syntax error in config name declaration")
 
     return (name, tokenStack)
