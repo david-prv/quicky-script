@@ -36,7 +36,7 @@ def generateRoute(rule: parser.Rule) -> str:
 // """ + str(rule.__dict__) + """
 App::route(\"""" + rule.method.methodName.upper() + """\", \"""" + rule.path.path + """\", function (Request $request, Response $response) {
     // invoke callback
-    $ufrv = call_user_func(array(\"""" + rule.callback.className + """\", \"""" + rule.callback.methodName + """\"), [$request, $response]);
+    $ufrv = call_user_func(array(\"""" + rule.callback.className + """\", \"""" + rule.callback.methodName + """\"), $request, $response);
     if (!$ufrv instanceof Response) {
         return $response;
     }
