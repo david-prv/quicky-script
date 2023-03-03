@@ -1,7 +1,7 @@
-[ROUTER_CNF_NAME]
+[ROUTER_CNF]
 
-/path/of/route (GET) <ClassName.method>
-/path/of/route (GET) <ClassName.method>
-/path/of/route (GET) <ClassName.method>
-/path/of/route (GET) <ClassName.method>
-/path/of/route (GET) <ClassName.method>
+/path/of/route/A/ (GET) <ClassName.methodA>
+/path/of/route/B/ (POST) <ClassName.methodB>
+/path/of/route/C/ (PUT) <ClassName.methodC>
+/path/of/route/D/ (DELETE) <ClassName.methodD>
+/path/of/route/E/ (UPDATE) <ClassName.methodE>
