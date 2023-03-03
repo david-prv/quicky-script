@@ -9,8 +9,13 @@ Config:
 ```
 [CNF_NAME]
 
+# Route to Page A
 /path/to/route/A/ (GET) <\QUALIFIED\CLASSNAME.CALLBACK>
+
+# Route to Page B
 /path/to/route/B/ (POST) <\QUALIFIED\CLASSNAME.CALLBACK>
+
+# Route to Page C
 /path/to/route/C/ (PUT) <\QUALIFIED\CLASSNAME.CALLBACK>
 ```
 <details>
