@@ -1,4 +1,14 @@
-# quicky-script
+  
+  
+<div align="center">
+<p>
+  <img alt="" height="80" src="https://user-images.githubusercontent.com/66866223/222735306-9871074e-a67a-463b-8233-66372cd32ec8.png">
+</p>
+</div>
+  
+  
+------------------------------
+
 Conceptional Idea - A QuickyPHP Bootstrap Configuration Scriptlang  
 
 This application will transcompile the QuickyScript code to a QuickyPHP-Code bootstrap, from which you can boot a QuickyPHP app using the configured router behaviour.
