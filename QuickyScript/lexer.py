@@ -82,8 +82,16 @@ symbols = {
 def tokenize(input: str) -> list[Token]:
     tmp = []
     tokenList = []
+    skip = False
 
     for c in input:
+        if skip and c != "\n":
+            continue
+        
+        if c == "#":
+            skip = True
+            continue
+
         if c.isalpha():
             tmp.append(c)
         else:
@@ -91,7 +99,11 @@ def tokenize(input: str) -> list[Token]:
                 tokenList.append(WordToken(''.join(tmp)))
                 tmp = []
 
-            if c == "\n" or c == "" or c == " ": continue
+            if c == "\n":
+                skip = False
+                continue
+
+            if c == "" or c == " ": continue
 
             if not c in symbols: exit(f"ERROR: Unknown token '{c}' found - aborted.")
 
