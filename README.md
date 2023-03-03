@@ -78,6 +78,6 @@ use Quicky\Http\Request;
 use Quicky\Http\Response;
 use Quicky\App;
 
-$app = require_once "config.qcnf.php";
+$app = require_once __DIR__ . "/config.qcnf.php";
 $app->run();
 ```
