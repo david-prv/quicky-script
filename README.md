@@ -74,6 +74,6 @@ use Quicky\Http\Request;
 use Quicky\Http\Response;
 use Quicky\App;
 
-$app = require_once "sample1.qcnf.php";
+$app = require_once "config.qcnf.php";
 $app->run();
 ```
