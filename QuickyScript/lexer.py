@@ -1,4 +1,4 @@
-# GENERAL
+##### Token Typedef
 
 class Token:
     def __init__(self, t_type):
@@ -8,7 +8,7 @@ class WordToken(Token):
     def __init__(self, t_type):
         Token.__init__(self, t_type)
 
-# BRACKETS
+##### Bracket Tokens
 
 class LSquareToken(Token):
     def __init__(self, t_type = "["):
@@ -42,7 +42,7 @@ class GThanToken(Token):
     def __init__(self, t_type = ">"):
         Token.__init__(self, t_type)
 
-# SPECIAL
+##### Special Char Tokens
 
 class FSlashToken(Token):
     def __init__(self, t_type = "/"):
@@ -60,7 +60,7 @@ class UScoreToken(Token):
     def __init__(self, t_type = "_"):
         Token.__init__(self, t_type)
 
-# SYMBOL TRANSLATION
+##### Symbol Translation
 
 symbols = {
     "[": LSquareToken(),
@@ -76,6 +76,8 @@ symbols = {
     ".": DotToken(),
     "_": UScoreToken() 
 }
+
+##### Main
 
 def tokenize(input: str) -> list[Token]:
     tmp = []
