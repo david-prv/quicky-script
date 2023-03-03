@@ -87,11 +87,16 @@ def tokenize(input: str) -> list[Token]:
         else:
             if len(tmp) > 0:
                 tokenList.append(WordToken(''.join(tmp)))
-                print(f"Word: {''.join(tmp)}")
                 tmp = []
 
             if c == "\n" or c == "" or c == " ": continue
 
+            if not c in symbols: exit(f"ERROR: Unknown token '{c}' found - aborted.")
+
             tokenList.append(symbols[c])
 
     return tokenList
+
+def dump(lst: list[Token]) -> None:
+    for el in lst:
+        print(el.__dict__)
