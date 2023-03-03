@@ -1,0 +1,35 @@
+[ANOTHER_ROUTER_CNF]
+
+/path/of/route/A/ (GET) <ClassName.methodA>
+/path/of/route/B/ (POST) <ClassName.methodB>
+/path/of/route/C/ (PUT) <ClassName.methodC>
+/path/of/route/D/ (DELETE) <ClassName.methodD>
+/path/of/route/E/ (UPDATE) <ClassName.methodE>
+
+
+/path/of/route/A/ (GET) <ClassName.methodA>
+/path/of/route/B/ (POST) <ClassName.methodB>
+/path/of/route/C/ (PUT) <ClassName.methodC>
+/path/of/route/D/ (DELETE) <ClassName.methodD>
+/path/of/route/E/ (UPDATE) <ClassName.methodE>
+
+
+/path/of/route/A/ (GET) <ClassName.methodA>
+/path/of/route/B/ (POST) <ClassName.methodB>
+/path/of/route/C/ (PUT) <ClassName.methodC>
+/path/of/route/D/ (DELETE) <ClassName.methodD>
+/path/of/route/E/ (UPDATE) <ClassName.methodE>
+
+
+/path/of/route/A/ (GET) <ClassName.methodA>
+/path/of/route/B/ (POST) <ClassName.methodB>
+/path/of/route/C/ (PUT) <ClassName.methodC>
+/path/of/route/D/ (DELETE) <ClassName.methodD>
+/path/of/route/E/ (UPDATE) <ClassName.methodE>
+
+
+/path/of/route/A/ (GET) <ClassName.methodA>
+/path/of/route/B/ (POST) <ClassName.methodB>
+/path/of/route/C/ (PUT) <ClassName.methodC>
+/path/of/route/D/ (DELETE) <ClassName.methodD>
+/path/of/route/E/ (UPDATE) <ClassName.methodE>
